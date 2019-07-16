@@ -1,12 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Beranda</title>
-  <link rel="icon" href="img/icon.png" type="image/png">
+	<link rel="icon" href="template/img/Fevicon.png" type="image/png">
 
   <link rel="stylesheet" href="template/vendors/bootstrap/bootstrap.min.css">
   <link rel="stylesheet" href="template/vendors/fontawesome/css/all.min.css">
@@ -19,7 +18,6 @@
 
   <link rel="stylesheet" href="template/css/style.css">
 </head>
-
 <body>
 
   <!--================ Header Menu Area start =================-->
@@ -27,7 +25,7 @@
     <div class="main_menu">
       <nav class="navbar navbar-expand-lg navbar-light">
         <div class="container box_1620">
-          <a class="navbar-brand logo_h" href="index.html"><img src="img/icon.png" width="120" height="80" alt=""></a>
+          <a class="navbar-brand logo_h" href="index.html"><img src="template/img/logo.png" alt=""></a>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
@@ -36,48 +34,44 @@
 
           <div class="collapse navbar-collapse offset" id="navbarSupportedContent">
             <ul class="nav navbar-nav menu_nav justify-content-end">
-              <li class="nav-item"><a class="nav-link" href="beranda.php">Beranda</a></li>
+              <li class="nav-item active"><a class="nav-link" href="index.html">Home</a></li> 
+              <li class="nav-item"><a class="nav-link" href="about.html">About</a></li> 
+              <li class="nav-item"><a class="nav-link" href="speaker.html">Speakers</a>
               <li class="nav-item submenu dropdown">
-                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Pelatihan</a>
+                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                  aria-expanded="false">Pages</a>
                 <ul class="dropdown-menu">
-                  <li class="nav-item"><a class="nav-link" href="event-schedule.html">Vocational School Graduate Academy (VSGA)</a>
-                  <li class="nav-item"><a class="nav-link" href="event-gallery.html">Fresh Graduate Academy (FGA)</a>
-                  <li class="nav-item"><a class="nav-link" href="price.html">Coding Teacher Academy(CTA)</a>
-                  <li class="nav-item"><a class="nav-link" href="price.html">Online Academy (OA)</a>
+                  <li class="nav-item"><a class="nav-link" href="event-schedule.html">Schedule</a>                  
+                  <li class="nav-item"><a class="nav-link" href="event-gallery.html">Gallery</a>                  
+                  <li class="nav-item"><a class="nav-link" href="price.html">Price Table</a>                  
                 </ul>
-              </li>
+							</li>
+
               <li class="nav-item submenu dropdown">
-                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Pusat Informasi</a>
+                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                  aria-expanded="false">Blog</a>
                 <ul class="dropdown-menu">
-                  <li class="nav-item"><a class="nav-link" href="event-schedule.html">Panduan Tes Subtansi</a>
-                  <li class="nav-item"><a class="nav-link" href="event-gallery.html">Hak dan Kewajiban</a>
+                  <li class="nav-item"><a class="nav-link" href="blog.html">Blog Single</a></li>
+                  <li class="nav-item"><a class="nav-link" href="blog-details.html">Blog Details</a></li>
                 </ul>
-              </li>
-              <li class="nav-item"><a class="nav-link" href="beranda.php">Tentang Kami</a></li>
-              <li class="nav-item"><a class="nav-link" href="beranda.php">Penyelenggara</a></li>
-              <li class="nav-item"><a class="nav-link" href="contact.html">Rilis Media</a></li>
-              <li class="nav-item"><a class="nav-link" href="beranda.php">FAQ</a></li>
-              <li class="nav-item"><a class="nav-link" href="beranda.php">Kontak</a></li>
-              <li class="nav-item submenu dropdown ml-5">
-                <a href="#" class="nav-link dropdown-toggle" style="font-weight:bold;" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">LOGIN</a>
-                <ul class="dropdown-menu">
-                  <li class="nav-item"><a class="nav-link" href="Login/login.php">Login Peserta</a></li>
-                  <li class="nav-item"><a class="nav-link" href="blog-details.html">Daftar Akun</a></li>
-                </ul>
-              </li>
+							</li>
+              <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
             </ul>
-          </div>
+          </div> 
         </div>
       </nav>
     </div>
   </header>
   <!--================Header Menu Area =================-->
 
-
+  
   <!--================Hero Banner Area Start =================-->
-  <section class="background-crausel">
+  <section class="hero-banner">
     <div class="container text-center">
       <span class="hero-banner-icon"><i class="flaticon-sing"></i></span>
+      <p>20 - 22 January, 2019, Buffelo City</p>
+      <h1>UX CONFERENCE 2019</h1>
+      <a class="button button-header" href="#">Buy Ticket</a>
     </div>
   </section>
   <!--================Hero Banner Area End =================-->
@@ -89,9 +83,31 @@
       <div class="row">
         <div class="col-lg-6 align-self-center mb-5 mb-lg-0">
           <div class="innovative-wrapper">
-            <h3 class="primary-text">Ikuti Pelatihannya dan Dapatkan pengalaman <br class="d-none d-xl-block">Digital Schoolarship 2019</h3>
-            <p class="h4 primary-text2 mb-3">Ikuti Langkah-langkah dalam pendaftaran !!</p>
-            <p>Hai para developer muda ikutin langkah-langkah pendaftaran untuk mengikuti pelatihan Digital Schoolarship 2019 Raih beasiswa untuk 25000 peserta</p>
+            <h3 class="primary-text">Innovative With Experience <br class="d-none d-xl-block"> UX Design 2019</h3>
+            <p class="h4 primary-text2 mb-3">Where The business World Meets</p>
+            <p>Morning steas great earth for divide our good sixth called abunda itseld appear fisrd seaton upon above may bearing all moveth morning make subdue stars they are a goreat eart divide our good sixth one of that</p>
+          </div>
+        </div>
+        <div class="col-lg-6 pl-xl-5">
+
+          <ul class="clockdiv text-center" id="clockdiv">
+            <li class="clockdiv-single clockdiv-day">
+              <h1 class="days">320</h1>
+              <span class="smalltext">Days</span>
+            </li>
+            <li class="clockdiv-single clockdiv-hour">
+              <h1 class="hours">30</h1>
+              <span class="smalltext">Hours</span>
+            </li>
+            <li class="clockdiv-single clockdiv-minute">
+              <h1 class="minutes">30</h1>
+              <span class="smalltext">Mins</span>
+            </li>
+          </ul>
+          
+          <div class="clockdiv-content text-center">
+            <p class="h4 primary-text2 mb-2">January 20 -22, 2019 in Buffelo City</p>
+            <a class="button button-link" href="#">Get Ticket</a>
           </div>
         </div>
       </div>
@@ -305,11 +321,11 @@
                 </a>
               </li>
             </ul>
-
+          
             <!-- Tab panes -->
             <div class="tab-content">
               <div id="day1" class="tab-pane">
-
+                
                 <div class="schedule-card">
                   <div class="row no-gutters">
                     <div class="col-md-3">
@@ -354,7 +370,7 @@
 
               </div>
               <div id="day2" class="tab-pane active">
-
+                
                 <div class="schedule-card">
                   <div class="row no-gutters">
                     <div class="col-md-3">
@@ -375,7 +391,7 @@
                     </div>
                   </div>
                 </div>
-
+                
                 <div class="schedule-card">
                   <div class="row no-gutters">
                     <div class="col-md-3">
@@ -440,7 +456,7 @@
                     </div>
                   </div>
                 </div>
-
+                
                 <div class="schedule-card">
                   <div class="row no-gutters">
                     <div class="col-md-3">
@@ -525,7 +541,7 @@
                     </div>
                   </div>
                 </div>
-
+                
                 <div class="schedule-card">
                   <div class="row no-gutters">
                     <div class="col-md-3">
@@ -752,8 +768,8 @@
       <div class="row no-gutters">
         <div class="col-sm-6 col-md-4">
           <a href="img/gallery/g1.png" class="img-gal">
-            <div class="single-imgs relative">
-              <img class="card-img rounded-0" src="img/gallery/g1.png" alt="">
+            <div class="single-imgs relative">				
+              <img class="card-img rounded-0" src="img/gallery/g1.png" alt="">		
               <div class="overlay">
                 <div class="overlay-content">
                   <div class="overlay-icon">
@@ -766,8 +782,8 @@
         </div>
         <div class="col-sm-6 col-md-4">
           <a href="img/gallery/g2.png" class="img-gal">
-            <div class="single-imgs relative">
-              <img class="card-img rounded-0" src="img/gallery/g2.png" alt="">
+            <div class="single-imgs relative">				
+              <img class="card-img rounded-0" src="img/gallery/g2.png" alt="">		
               <div class="overlay">
                 <div class="overlay-content">
                   <div class="overlay-icon">
@@ -780,8 +796,8 @@
         </div>
         <div class="col-sm-6 col-md-4">
           <a href="img/gallery/g3.png" class="img-gal">
-            <div class="single-imgs relative">
-              <img class="card-img rounded-0" src="img/gallery/g3.png" alt="">
+            <div class="single-imgs relative">				
+              <img class="card-img rounded-0" src="img/gallery/g3.png" alt="">		
               <div class="overlay">
                 <div class="overlay-content">
                   <div class="overlay-icon">
@@ -794,8 +810,8 @@
         </div>
         <div class="col-sm-6 col-md-4">
           <a href="img/gallery/g4.png" class="img-gal">
-            <div class="single-imgs relative">
-              <img class="card-img rounded-0" src="img/gallery/g4.png" alt="">
+            <div class="single-imgs relative">				
+              <img class="card-img rounded-0" src="img/gallery/g4.png" alt="">		
               <div class="overlay">
                 <div class="overlay-content">
                   <div class="overlay-icon">
@@ -808,8 +824,8 @@
         </div>
         <div class="col-sm-6 col-md-4">
           <a href="img/gallery/g5.png" class="img-gal">
-            <div class="single-imgs relative">
-              <img class="card-img rounded-0" src="img/gallery/g5.png" alt="">
+            <div class="single-imgs relative">				
+              <img class="card-img rounded-0" src="img/gallery/g5.png" alt="">		
               <div class="overlay">
                 <div class="overlay-content">
                   <div class="overlay-icon">
@@ -822,8 +838,8 @@
         </div>
         <div class="col-sm-6 col-md-4">
           <a href="img/gallery/g6.png" class="img-gal">
-            <div class="single-imgs relative">
-              <img class="card-img rounded-0" src="img/gallery/g6.png" alt="">
+            <div class="single-imgs relative">				
+              <img class="card-img rounded-0" src="img/gallery/g6.png" alt="">		
               <div class="overlay">
                 <div class="overlay-content">
                   <div class="overlay-icon">
@@ -855,7 +871,7 @@
           <div class="blog-body">
             <a href="#">
               <h3>Owls should be used to help abused children open <br class="d-none d-xl-block">
-                up in therapy sessions, says charity boss</h3>
+                  up in therapy sessions, says charity boss</h3>
             </a>
             <ul class="blog-info">
               <li><a href="#"><i class="ti-comments-smiley"></i> 03 Feb, 2019</a></li>
@@ -869,7 +885,7 @@
           <div class="blog-body">
             <a href="#">
               <h3>Owls should be used to help abused children open <br class="d-none d-xl-block">
-                up in therapy sessions, says charity boss</h3>
+                  up in therapy sessions, says charity boss</h3>
             </a>
             <ul class="blog-info">
               <li><a href="#"><i class="ti-comments-smiley"></i> 03 Feb, 2019</a></li>
@@ -883,7 +899,7 @@
           <div class="blog-body">
             <a href="#">
               <h3>Owls should be used to help abused children open <br class="d-none d-xl-block">
-                up in therapy sessions, says charity boss</h3>
+                  up in therapy sessions, says charity boss</h3>
             </a>
             <ul class="blog-info">
               <li><a href="#"><i class="ti-comments-smiley"></i> 03 Feb, 2019</a></li>
@@ -897,7 +913,7 @@
           <div class="blog-body">
             <a href="#">
               <h3>Owls should be used to help abused children open <br class="d-none d-xl-block">
-                up in therapy sessions, says charity boss</h3>
+                  up in therapy sessions, says charity boss</h3>
             </a>
             <ul class="blog-info">
               <li><a href="#"><i class="ti-comments-smiley"></i> 03 Feb, 2019</a></li>
@@ -919,7 +935,7 @@
           <div class="single-footer-widget">
             <h6>About Umeet</h6>
             <p>
-              The world has become so fast paced that people don’t want to stand by reading a page of information to be they would much rather look at a presentation and understand the message. It has come to a point where images and videos are used more to
+              The world has become so fast paced that people don’t want to stand by reading a page of information to be  they would much rather look at a presentation and understand the message. It has come to a point where images and videos are used more to
             </p>
           </div>
         </div>
@@ -942,22 +958,22 @@
                   <li><a href="#">Blog</a></li>
                   <li><a href="#">Contact</a></li>
                 </ul>
-              </div>
-            </div>
+              </div>										
+            </div>							
           </div>
-        </div>
+        </div>							
         <div class="col-lg-3  col-md-6 col-sm-6">
           <div class="single-footer-widget">
             <h6>Newsletter</h6>
             <p>
-              For business professionals caught between high OEM price and mediocre print and graphic output.
-            </p>
+              For business professionals caught between high OEM price and mediocre print and graphic output.									
+            </p>								
             <div id="mc_embed_signup">
               <form target="_blank" action="https://spondonit.us12.list-manage.com/subscribe/post?u=1462626880ade1ac87bd9c93a&amp;id=92a4423d01" method="get" class="subscription relative">
                 <div class="input-group d-flex flex-row">
                   <input name="EMAIL" placeholder="Email Address" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Email Address '" required="" type="email">
-                  <button class="btn bb-btn"><span class="lnr lnr-location"></span></button>
-                </div>
+                  <button class="btn bb-btn"><span class="lnr lnr-location"></span></button>		
+                </div>									
                 <div class="mt-10 info"></div>
               </form>
             </div>
@@ -977,19 +993,15 @@
               <li><img src="img/instagram/i8.jpg" alt=""></li>
             </ul>
           </div>
-        </div>
+        </div>						
       </div>
     </div>
     <div class="footer-bottom">
       <div class="container">
         <div class="row align-items-center">
-          <p class="col-lg-8 col-sm-12 footer-text m-0 text-center text-lg-left">
-            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-            Copyright &copy;<script>
-              document.write(new Date().getFullYear());
-            </script> All rights reserved | This template is made with <i class="fa fa-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
-            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-          </p>
+          <p class="col-lg-8 col-sm-12 footer-text m-0 text-center text-lg-left"><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
           <div class="col-lg-4 col-sm-12 footer-social text-center text-lg-right">
             <a href="#"><i class="fab fa-facebook-f"></i></a>
             <a href="#"><i class="fab fa-twitter"></i></a>
@@ -1012,27 +1024,10 @@
   <script src="template/js/jquery.ajaxchimp.min.js"></script>
   <script src="template/js/mail-script.js"></script>
   <script src="template/js/countdown.js"></script>
-  <script src="template/js/jquery.magnific-popup.min.js"></script>
+  <script src="template/js/jquery.magnific-popup.min.js"></script>	
   <script src="template/js/main.js"></script>
 
 
 
 </body>
-<style>
-  .background-crausel {
-    background: url(img/bg.png);
-    position: relative;
-    left center no-repeat;
-    background-size: cover
-  }
-
-  .background-crausel {
-    padding: 150px 0
-  }
-
-  .background-crausel {
-    padding: 240px 0
-  }
-</style>
-
 </html>
