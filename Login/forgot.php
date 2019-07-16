@@ -8,7 +8,7 @@
     <meta name="author" content="Creative Tim">
     <title>Forgot Password</title>
     <!-- Favicon -->
-    <link href="../img/ds.jpg" rel="icon" type="image/png">
+    <link href="../img/icon.png" rel="icon" type="image/png">
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
     <!-- Icons -->
@@ -24,7 +24,7 @@
         <nav class="navbar navbar-top navbar-horizontal navbar-expand-md navbar-dark">
             <div class="container px-4">
                 <a class="navbar-brand" href="../index.html">
-                    <img src="../img/ds.jpg" />
+                    <img src="../img/icon.png" />
                 </a>
                 <h1 class="text-white">Digital Talent Schoolarship</h1>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-collapse-main" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">

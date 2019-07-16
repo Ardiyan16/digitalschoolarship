@@ -27,7 +27,7 @@
     <div class="main_menu">
       <nav class="navbar navbar-expand-lg navbar-light">
         <div class="container box_1620">
-          <a class="navbar-brand logo_h" href="index.html"><img src="img/icon.png" width="120" height="80" alt=""></a>
+          <a class="navbar-brand logo_h" href="index.html"><img src="img/icon.png" width="100" height="80" alt=""></a>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
@@ -62,7 +62,7 @@
                 <a href="#" class="nav-link dropdown-toggle" style="font-weight:bold;" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">LOGIN</a>
                 <ul class="dropdown-menu">
                   <li class="nav-item"><a class="nav-link" href="Login/login.php">Login Peserta</a></li>
-                  <li class="nav-item"><a class="nav-link" href="blog-details.html">Daftar Akun</a></li>
+                  <li class="nav-item"><a class="nav-link" href="Login/registrasi.php">Daftar Akun</a></li>
                 </ul>
               </li>
             </ul>
@@ -104,41 +104,41 @@
   <section class="section-margin">
     <div class="container">
       <div class="section-intro text-center pb-98px">
-        <p class="section-intro__title">Join the event</p>
-        <h2 class="primary-text">Why Join Ummet</h2>
-        <img src="img/home/section-style.png" alt="">
+        <p class="section-intro__title">daftarkan diri</p>
+        <h2 class="primary-text">Daftar pelatihan</h2>
+        <img src="template/img/home/section-style.png" alt="">
       </div>
 
 
       <div class="d-lg-flex justify-content-between">
-        <div class="card-feature mb-5 mb-lg-0">
-          <div class="feature-icon">
-            <i class="flaticon-prize"></i>
+        <div class="row">
+          <div class="card-feature col-md-3 mb-5 mb-lg-0">
+            <div class="vsga">
+              <a href=""><img src="img/vsga.png" width="200" height="150"></a>
+            </div>
+            <h3><a href="">School Graduate Academy (VSGA)</h3>
           </div>
-          <h3>Always First Service</h3>
-          <p>His likeness beast moved domini moved above meat all fly blessed greater creepeth you itself living room </p>
-        </div>
 
-        <div class="card-feature mb-5 mb-lg-0">
-          <div class="feature-icon">
-            <i class="flaticon-earth-globe"></i>
+          <div class="card-feature col-md-3 mb-5 mb-lg-0">
+            <div class="fga">
+              <a href=""><img src="img/fga.png" width="200" height="150"></a>
+            </div>
+            <h3><a href="">Fresh Graduate Academy (FGA)</a></h3>
           </div>
-          <h3>International Business</h3>
-          <p>His likeness beast moved domini moved above meat all fly blessed greater creepeth you itself living room </p>
-        </div>
 
-        <div class="card-feature mb-5 mb-lg-0">
-          <div class="feature-icon">
-            <i class="flaticon-sing"></i>
+          <div class="card-feature col-md-3 mb-5 mb-lg-0">
+            <div class="cta">
+              <a href=""><img src="img/cta.png" width="200" height="150"></a>
+            </div>
+            <h3><a href="">Coding Teacher Academy (CTA)</a></h3>
           </div>
-          <h3>World Great Speaker</h3>
-          <p>His likeness beast moved domini moved above meat all fly blessed greater creepeth you itself living room </p>
-        </div>
-      </div>
-      <div class="row mt-5">
-        <div class="col-12 text-center">
-          <a class="button mr-3 mb-2" href="#">Learn More</a>
-          <a class="button mb-2" href="#">Buy Ticket</a>
+
+          <div class="card-feature col-md-3 mb-5 mb-lg-0">
+            <div class="cta">
+              <a href=""><img src="img/oa.png" width="200" height="150"></a>
+            </div>
+            <h3><a href="">Online Academy (OA)</a></h3>
+          </div>
         </div>
       </div>
     </div>
