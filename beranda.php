@@ -53,7 +53,7 @@
                   <li class="nav-item"><a class="nav-link" href="event-gallery.html">Hak dan Kewajiban</a>
                 </ul>
               </li>
-              <li class="nav-item"><a class="nav-link" href="beranda.php">Tentang Kami</a></li>
+              <li class="nav-item"><a class="nav-link" href="about.php">Tentang Kami</a></li>
               <li class="nav-item"><a class="nav-link" href="beranda.php">Penyelenggara</a></li>
               <li class="nav-item"><a class="nav-link" href="contact.html">Rilis Media</a></li>
               <li class="nav-item"><a class="nav-link" href="beranda.php">FAQ</a></li>
@@ -226,8 +226,7 @@
             <section class="section-margin">
               <div class="container">
                 <div class="section-intro text-center pb-98px">
-                  <p class="section-intro__title">Join the event</p>
-                  <h2 class="primary-text">Why Join Ummet</h2>
+                  <h2 class="primary-text">Informasi</h2>
                   <img src="img/home/section-style.png" alt="">
                 </div>
 
