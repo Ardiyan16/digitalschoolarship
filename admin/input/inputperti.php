@@ -1,5 +1,5 @@
 <?php
-include 'koneksi.php';
+$koneksi = mysqli_connect("localhost", "root", "", "digital_schoolarship");
 ?>
 <?php
 session_start();
@@ -80,13 +80,13 @@ if (!isset($_SESSION["email"])) {
             <!-- User Account: style can be found in dropdown.less -->
             <li class="dropdown user user-menu">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                <img src="../dist/img/user2-160x160.jpg" class="user-image" alt="User Image">
+                <img src="../../img/profile.png" class="user-image" alt="User Image">
                 <span class="hidden-xs"><?php echo $_SESSION['email']; ?></span>
               </a>
               <ul class="dropdown-menu">
                 <!-- User image -->
                 <li class="user-header">
-                  <img src="../dist/img/user2-160x160.jpg" class="img-circle" alt="User Image">
+                  <img src="../../img/profile.png" class="img-circle" alt="User Image">
                 </li>
                 <!-- Menu Footer-->
                 <li class="user-footer">
@@ -111,7 +111,7 @@ if (!isset($_SESSION["email"])) {
         <!-- Sidebar user panel -->
         <div class="user-panel">
           <div class="pull-left image">
-            <img src="../dist/img/user2-160x160.jpg" class="img-circle" alt="User Image">
+            <img src="../../img/profile.png" class="img-circle" alt="User Image">
           </div>
           <div class="pull-left info">
             <p><?php echo $_SESSION['email']; ?></p>
@@ -140,7 +140,7 @@ if (!isset($_SESSION["email"])) {
               </span>
             </a>
             <ul class="treeview-menu">
-              <li class="active"><a href="inputperti.php"><i class="fa fa-file-text-o"></i> Input Data Perti</a></li>
+              <li><a href="inputperti.php"><i class="fa fa-file-text-o"></i> Input Data Perti</a></li>
               <li><a href="../tabeldata/viewdataperti.php"><i class="fa fa-tv"></i> View Data Perti</a></li>
             </ul>
           </li>
