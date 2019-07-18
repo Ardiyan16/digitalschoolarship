@@ -14,7 +14,7 @@ function signup($data)
     if (mysqli_fetch_assoc($result)) {
         echo "<script>
                     alert('email sudah terdaftar');
-                    window.location= 'http://localhost/digitaltalent/Login/registrasi.php';
+                    window.location= 'http://localhost/digitalschoolarship/Login/registrasi.php';
                     </script>";
 
 
@@ -24,7 +24,7 @@ function signup($data)
     if (strlen($password) <= 7) {
         echo "<script>
                     alert(' password minimal 8 digit');
-                    window.location= 'http://localhost/digitaltalent/login/registrasi.php';
+                    window.location= 'http://localhost/digitalschoolarship/login/registrasi.php';
                     </script>";
         return false;
     }

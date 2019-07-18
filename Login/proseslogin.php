@@ -16,11 +16,11 @@ if ($cek > 0) {
 
     echo "<script>
                     alert('selamat datang');
-                    window.location= 'http://localhost/digitaltalent/formds.php';
+                    window.location= 'http://localhost/digitalschoolarship/formds.php';
                     </script>";
 } else {
     echo "<script>
                     alert('email atau password yang anda masukkan salah');
-                    window.location= 'http://localhost/digitaltalent/Login/login.php';
+                    window.location= 'http://localhost/digitalschoolarship/Login/login.php';
                     </script>";
 }
