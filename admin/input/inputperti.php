@@ -187,6 +187,10 @@ if (!isset($_SESSION["email"])) {
                 <label>Images</label>
                 <input type="file" name="gambar">
               </div>
+              <div class="form-group">
+                <label>Alamat_Website</label>
+                <input type="text" class="form-control" name="alamat_website" placeholder="alamat website">
+              </div>
               <div class="box-footer clearfix">
                 <button type="submit" class="pull-left btn btn-primary" name="simpan" value="simpan">Simpan</button>
               </div>
@@ -200,9 +204,10 @@ if (!isset($_SESSION["email"])) {
               $images = $_FILES['gambar']['name'];
               $letak = $_FILES['gambar']['tmp_name'];
               $folder = './uploads/';
+              $alamat_website = $_POST['alamat_website'];
 
               move_uploaded_file($letak, $folder . $images);
-              $insert = mysqli_query($koneksi, "INSERT INTO perti VALUES (NULL, '$nama_perti', '$alamat', '$jadwal_pelatihan', '$kuota', '$images')");
+              $insert = mysqli_query($koneksi, "INSERT INTO perti VALUES (NULL, '$nama_perti', '$alamat', '$jadwal_pelatihan', '$kuota', '$images', '$alamat_website')");
               if ($insert) {
                 echo "Data berhasil di simpan";
               } else {

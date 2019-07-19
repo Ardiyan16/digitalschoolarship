@@ -9,6 +9,7 @@ $alamat = $edit['alamat'];
 $jadwal_pelatihan = $edit['jadwal_pelatihan'];
 $kuota = $edit['kuota'];
 $images = $edit['images'];
+$alamat_website = $edit['alamat_website'];
 ?>
 <?php
 session_start();
@@ -196,6 +197,10 @@ if (!isset($_SESSION["email"])) {
                             <div class="form-group">
                                 <img src="../input/uploads/<?php echo $images ?>" width="150" height="150">
                             </div>
+                            <div class="form-group">
+                                <label>Alamat_Website</label>
+                                <input type="text" class="form-control" name="alamat_website" value="<?php echo $alamat_website ?>" placeholder="alamat website">
+                            </div>
                             <div class="box-footer clearfix">
                                 <button type="submit" class="pull-left btn btn-primary" name="simpan" value="simpan">Simpan</button>
                             </div>
@@ -208,7 +213,8 @@ if (!isset($_SESSION["email"])) {
                             $kuota = $_POST['kuota'];
                             $images = $_FILES['gambar']['name'];
                             $letak = $_FILES['gambar']['tmp_name'];
-                            $folder = './uploads/';
+                            $folder = '../input/uploads/';
+                            $alamat_website = $_POST['alamat_website'];
 
                             if ($images != '') {
                                 move_uploaded_file($letak, $folder . $images);
@@ -217,7 +223,8 @@ if (!isset($_SESSION["email"])) {
                             alamat= '" . $alamat . "', 
                             jadwal_pelatihan= '" . $jadwal_pelatihan . "', 
                             kuota= '" . $kuota . "', 
-                            gambar= '" . $images . "'
+                            gambar= '" . $images . "',
+                            alamat_website= '" . $alamat_website . "'
                             WHERE id= '" . $_GET['id'] . "'
                             ");
                                 if ($update) {
@@ -232,6 +239,7 @@ if (!isset($_SESSION["email"])) {
                             jadwal_pelatihan= '" . $jadwal_pelatihan . "', 
                             kuota= '" . $kuota . "', 
                             gambar= '" . $images . "'
+                            alamat_website= '" . $alamat_website . "'
                             WHERE id= '" . $_GET['id'] . "'
                             ");
                                 if ($update) {

@@ -54,7 +54,7 @@
                 </ul>
               </li>
               <li class="nav-item"><a class="nav-link" href="about.php">Tentang Kami</a></li>
-              <li class="nav-item"><a class="nav-link" href="beranda.php">Penyelenggara</a></li>
+              <li class="nav-item"><a class="nav-link" href="penyelenggara.php">Penyelenggara</a></li>
               <li class="nav-item"><a class="nav-link" href="contact.html">Rilis Media</a></li>
               <li class="nav-item"><a class="nav-link" href="beranda.php">FAQ</a></li>
               <li class="nav-item"><a class="nav-link" href="beranda.php">Kontak</a></li>
@@ -232,7 +232,7 @@
 
                 <div class="owl-theme owl-carousel blogCarousel pb-xl-1">
                   <div class="card-blog">
-                    <img class="card-img" src="img/blog/blog1.png" alt="">
+                    <img class="card-img" src="template/img/blog/blog1.png" alt="">
                     <div class="blog-body">
                       <a href="#">
                         <h3>Owls should be used to help abused children open <br class="d-none d-xl-block">
