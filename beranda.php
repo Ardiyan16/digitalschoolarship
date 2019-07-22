@@ -1,3 +1,7 @@
+<?php
+require 'function.php'
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -36,7 +40,7 @@
 
           <div class="collapse navbar-collapse offset" id="navbarSupportedContent">
             <ul class="nav navbar-nav menu_nav justify-content-end">
-              <li class="nav-item"><a class="nav-link" href="beranda.php">Beranda</a></li>
+              <li class="nav-item active"><a class="nav-link" href="beranda.php">Beranda</a></li>
               <li class="nav-item submenu dropdown">
                 <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Pelatihan</a>
                 <ul class="dropdown-menu">
@@ -159,6 +163,7 @@
           <div class="scheduleTab">
             <ul class="nav nav-tabs">
               <li class="nav-item text-center">
+
                 <h1 class="text-center">1</h1>
                 <a data-toggle="tab" href="#day1"><img src="img/laptop.png" height="120" width="120"></a>
                 <h4>Pendaftaran Online</h4>

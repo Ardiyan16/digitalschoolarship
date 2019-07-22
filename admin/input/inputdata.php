@@ -20,7 +20,7 @@ if (!isset($_SESSION["email"])) {
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Admin Data P</title>
+    <title>Admin Input Data</title>
     <!-- Tell the browser to be responsive to screen width -->
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
     <!-- Bootstrap 3.3.7 -->
@@ -29,23 +29,21 @@ if (!isset($_SESSION["email"])) {
     <link rel="stylesheet" href="../bower_components/font-awesome/css/font-awesome.min.css">
     <!-- Ionicons -->
     <link rel="stylesheet" href="../bower_components/Ionicons/css/ionicons.min.css">
-    <!-- DataTables -->
-    <link rel="stylesheet" href="../bower_components/datatables.net-bs/css/dataTables.bootstrap.min.css">
     <!-- Theme style -->
     <link rel="stylesheet" href="../dist/css/AdminLTE.min.css">
     <!-- AdminLTE Skins. Choose a skin from the css/skins
        folder instead of downloading all of them to reduce the load. -->
     <link rel="stylesheet" href="../dist/css/skins/_all-skins.min.css">
-
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-  <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
-  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-  <![endif]-->
-
-    <!-- Google Font -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">
+    <!-- Morris chart -->
+    <link rel="stylesheet" href="../bower_components/morris.js/morris.css">
+    <!-- jvectormap -->
+    <link rel="stylesheet" href="../bower_components/jvectormap/jquery-jvectormap.css">
+    <!-- Date Picker -->
+    <link rel="stylesheet" href="../bower_components/bootstrap-datepicker/dist/css/bootstrap-datepicker.min.css">
+    <!-- Daterange picker -->
+    <link rel="stylesheet" href="../bower_components/bootstrap-daterangepicker/daterangepicker.css">
+    <!-- bootstrap wysihtml5 - text editor -->
+    <link rel="stylesheet" href="../plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.min.css">
     <link rel="icon" href="../../img/icon.png" type="image/png">
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -142,8 +140,8 @@ if (!isset($_SESSION["email"])) {
                             </span>
                         </a>
                         <ul class="treeview-menu">
-                            <li><a href="../input/inputperti.php"><i class="fa fa-file-text-o"></i> Input Data Perti</a></li>
-                            <li><a href="viewdataperti.php"><i class="fa fa-tv"></i> View Data Perti</a></li>
+                            <li><a href="inputperti.php"><i class="fa fa-file-text-o"></i> Input Data Perti</a></li>
+                            <li><a href="../tabeldata/viewdataperti.php"><i class="fa fa-tv"></i> View Data Perti</a></li>
                         </ul>
                     </li>
                     <li class="active treeview">
@@ -154,63 +152,72 @@ if (!isset($_SESSION["email"])) {
                             </span>
                         </a>
                         <ul class="treeview-menu">
-                            <li><a href="../input/inputdata.php"><i class="fa fa-file-text-o"></i> Input Data Merk</a></li>
-                            <li><a href="viewdatamerk.php"><i class="fa fa-tv"></i> View Data Merk</a></li>
+                            <li><a href="inputdata.php"><i class="fa fa-file-text-o"></i> Input Data Merk</a></li>
+                            <li><a href="../tabeldata/viewdatamerk.php"><i class="fa fa-tv"></i> View Data Merk</a></li>
                         </ul>
                     </li>
                 </ul>
             </section>
         </aside>
+
         <!-- Content Wrapper. Contains page content -->
         <div class="content-wrapper">
-            <section class="content">
-                <div class="row">
-                    <div class="col-xs-12">
-                        <div class="box">
-                            <div class="box-header">
-                                <h3 class="box-title">View Tabel Data Perguruan Tinggi</h3>
-                            </div>
-                            <!-- /.box-header -->
-                            <div class="box-body">
-                                <table id="example1" class="table table-bordered table-striped">
-                                    <thead>
-                                        <tr>
-                                            <th>Id</th>
-                                            <th>Nama Perti</th>
-                                            <th>Alamat</th>
-                                            <th>Jadwal Pelatihan</th>
-                                            <th>Kuota</th>
-                                            <th>Images</th>
-                                            <th>Alamat Website</th>
-                                            <th>Aksi</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <?php
-                                        $query = mysqli_query($koneksi, "SELECT * FROM perti");
-                                        while ($row = mysqli_fetch_array($query)) {
-                                            ?>
-                                            <tr>
-                                                <th><?php echo $row['id'] ?></th>
-                                                <th><?php echo $row['nama_perti'] ?></th>
-                                                <th><?php echo $row['alamat'] ?></th>
-                                                <th><?php echo $row['jadwal_pelatihan'] ?></th>
-                                                <th><?php echo $row['kuota'] ?></th>
-                                                <th><img src="../input/uploads/<?php echo $row['images'] ?>" width="100" height="100"></th>
-                                                <th><?php echo $row['alamat_website'] ?></th>
-                                                <th>
-                                                    <a href="../editdata/editdataperti.php?id=<?php echo $row['id'] ?>" class="btn btn-small"><i class="fa fa-edit"></i>Edit</a>
-                                                    <a onclick="deleteConfirm" href="../hapusdata/hapusperti.php?id=<?php echo $row['id'] ?>" class="btn btn-small text-danger"><i class="fa fa-trash-o">Hapus</i></a>
-                                                </th>
-                                            <?php } ?>
-                                    </tbody>
-                                </table>
-                            </div>
-                            <!-- /.box-body -->
-                        </div>
+            <!-- Content Header (Page header) -->
+            <section class="content-header connectedSortable">
+                <div class="idp mb-5">
+                    <h3 class="mb-5">
+                        Input Data Perti
+                    </h3>
+                </div>
+                <div class="box box-info mt-5">
+                    <div class="box-header">
+                        <i class="fa fa-document"></i>
+
+                        <h3 class="box-title">Data Perguruan Tinggi</h3>
+                        <!-- tools box -->
+                        <!-- /. tools -->
                     </div>
+                    <div class="box-body">
+                        <form action="" method="post" enctype="multipart/form-data">
+                            <div class="form-group">
+                                <label>nama merk</label>
+                                <input type="text" class="form-control" name="nama_merk" placeholder="Nama merk">
+                            </div>
+                            <div class="form-group">
+                                <label>warna</label>
+                                <input type="text" class="form-control" name="warna" placeholder="Warna">
+                            </div>
+                            <div class="form-group">
+                                <label>Jumlah</label>
+                                <input type="text" class="form-control" name="jumlah" placeholder="Jumlah">
+                            </div>
+                            <div class="box-footer clearfix">
+                                <button type="submit" class="pull-left btn btn-primary" name="simpan" value="simpan">Simpan</button>
+                            </div>
+                        </form>
+                        <?php
+                        if (isset($_POST['simpan'])) {
+                            $nama_merk = $_POST['nama_merk'];
+                            $warna = $_POST['warna'];
+                            $jumlah = $_POST['jumlah'];
+
+                            $insert = mysqli_query($koneksi, "INSERT INTO data VALUES (NULL, 
+                            '$nama_merk', 
+                            '$warna', 
+                            '$jumlah')");
+                            if ($insert) {
+                                echo "Data berhasil di simpan";
+                            } else {
+                                echo "Data Gagal disimpan";
+                            }
+                        }
+
+                        ?>
+                    </div>
+                </div>
             </section>
         </div>
+
 
 
         <!-- /.content-wrapper -->
@@ -231,33 +238,34 @@ if (!isset($_SESSION["email"])) {
         $.widget.bridge('uibutton', $.ui.button);
     </script>
     <!-- Bootstrap 3.3.7 -->
-    <script src="../../bower_components/jquery/dist/jquery.min.js"></script>
-    <!-- Bootstrap 3.3.7 -->
     <script src="../bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
-    <!-- DataTables -->
-    <script src="../bower_components/datatables.net/js/jquery.dataTables.min.js"></script>
-    <script src="../bower_components/datatables.net-bs/js/dataTables.bootstrap.min.js"></script>
-    <!-- SlimScroll -->
+    <!-- Morris.js charts -->
+    <script src="../bower_components/raphael/raphael.min.js"></script>
+    <script src="../bower_components/morris.js/morris.min.js"></script>
+    <!-- Sparkline -->
+    <script src="../bower_components/jquery-sparkline/dist/jquery.sparkline.min.js"></script>
+    <!-- jvectormap -->
+    <script src="../plugins/jvectormap/jquery-jvectormap-1.2.2.min.js"></script>
+    <script src="../plugins/jvectormap/jquery-jvectormap-world-mill-en.js"></script>
+    <!-- jQuery Knob Chart -->
+    <script src="../bower_components/jquery-knob/dist/jquery.knob.min.js"></script>
+    <!-- daterangepicker -->
+    <script src="../bower_components/moment/min/moment.min.js"></script>
+    <script src="../bower_components/bootstrap-daterangepicker/daterangepicker.js"></script>
+    <!-- datepicker -->
+    <script src="../bower_components/bootstrap-datepicker/dist/js/bootstrap-datepicker.min.js"></script>
+    <!-- Bootstrap WYSIHTML5 -->
+    <script src="../plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.all.min.js"></script>
+    <!-- Slimscroll -->
     <script src="../bower_components/jquery-slimscroll/jquery.slimscroll.min.js"></script>
     <!-- FastClick -->
     <script src="../bower_components/fastclick/lib/fastclick.js"></script>
     <!-- AdminLTE App -->
     <script src="../dist/js/adminlte.min.js"></script>
+    <!-- AdminLTE dashboard demo (This is only for demo purposes) -->
+    <script src="../dist/js/pages/dashboard.js"></script>
     <!-- AdminLTE for demo purposes -->
     <script src="../dist/js/demo.js"></script>
-    <script>
-        $(function() {
-            $('#example1').DataTable()
-            $('#example2').DataTable({
-                'paging': true,
-                'lengthChange': false,
-                'searching': false,
-                'ordering': true,
-                'info': true,
-                'autoWidth': false
-            })
-        })
-    </script>
 
 </body>
 

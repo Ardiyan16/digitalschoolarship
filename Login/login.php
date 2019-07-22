@@ -82,9 +82,9 @@
                 <div class="form-group mb-3">
                   <div class="input-group input-group-alternative">
                     <div class="input-group-prepend">
-                      <span class="input-group-text"><i class="ni ni-email-83"></i></span>
+                      <span class="input-group-text"><i class="ni ni-circle-08"></i></span>
                     </div>
-                    <input class="form-control" placeholder="Email" name="email" type="email">
+                    <input class="form-control" placeholder="username" name="username" type="text">
                   </div>
                 </div>
                 <div class="form-group">

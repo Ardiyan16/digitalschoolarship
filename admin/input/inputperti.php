@@ -144,6 +144,18 @@ if (!isset($_SESSION["email"])) {
               <li><a href="../tabeldata/viewdataperti.php"><i class="fa fa-tv"></i> View Data Perti</a></li>
             </ul>
           </li>
+          <li class="active treeview">
+            <a href="#">
+              <i class="fa fa-file-text-o"></i> <span>Data Merk</span>
+              <span class="pull-right-container">
+                <i class="fa fa-angle-left pull-right"></i>
+              </span>
+            </a>
+            <ul class="treeview-menu">
+              <li><a href="inputdata.php"><i class="fa fa-file-text-o"></i> Input Data Merk</a></li>
+              <li><a href="../tabeldata/viewdatamerk.php"><i class="fa fa-tv"></i> View Data Merk</a></li>
+            </ul>
+          </li>
         </ul>
       </section>
     </aside>
@@ -207,7 +219,13 @@ if (!isset($_SESSION["email"])) {
               $alamat_website = $_POST['alamat_website'];
 
               move_uploaded_file($letak, $folder . $images);
-              $insert = mysqli_query($koneksi, "INSERT INTO perti VALUES (NULL, '$nama_perti', '$alamat', '$jadwal_pelatihan', '$kuota', '$images', '$alamat_website')");
+              $insert = mysqli_query($koneksi, "INSERT INTO perti VALUES (NULL, 
+              '$nama_perti', 
+              '$alamat', 
+              '$jadwal_pelatihan', 
+              '$kuota', 
+              '$images', 
+              '$alamat_website')");
               if ($insert) {
                 echo "Data berhasil di simpan";
               } else {

@@ -58,7 +58,7 @@ require 'function.php'
                                 </ul>
                             </li>
                             <li class="nav-item"><a class="nav-link" href="about.php">Tentang Kami</a></li>
-                            <li class="nav-item"><a class="nav-link" href="beranda.php">Penyelenggara</a></li>
+                            <li class="nav-item active"><a class="nav-link" href="beranda.php">Penyelenggara</a></li>
                             <li class="nav-item"><a class="nav-link" href="contact.html">Rilis Media</a></li>
                             <li class="nav-item"><a class="nav-link" href="beranda.php">FAQ</a></li>
                             <li class="nav-item"><a class="nav-link" href="beranda.php">Kontak</a></li>

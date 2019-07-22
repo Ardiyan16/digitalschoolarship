@@ -175,32 +175,26 @@ if (!isset($_SESSION["email"])) {
                                 <table id="example1" class="table table-bordered table-striped">
                                     <thead>
                                         <tr>
-                                            <th>Id</th>
-                                            <th>Nama Perti</th>
-                                            <th>Alamat</th>
-                                            <th>Jadwal Pelatihan</th>
-                                            <th>Kuota</th>
-                                            <th>Images</th>
-                                            <th>Alamat Website</th>
+                                            <th>No</th>
+                                            <th>Nama Merk</th>
+                                            <th>Warna</th>
+                                            <th>Jumlah</th>
                                             <th>Aksi</th>
                                         </tr>
                                     </thead>
                                     <tbody>
                                         <?php
-                                        $query = mysqli_query($koneksi, "SELECT * FROM perti");
+                                        $query = mysqli_query($koneksi, "SELECT * FROM data");
                                         while ($row = mysqli_fetch_array($query)) {
                                             ?>
                                             <tr>
-                                                <th><?php echo $row['id'] ?></th>
-                                                <th><?php echo $row['nama_perti'] ?></th>
-                                                <th><?php echo $row['alamat'] ?></th>
-                                                <th><?php echo $row['jadwal_pelatihan'] ?></th>
-                                                <th><?php echo $row['kuota'] ?></th>
-                                                <th><img src="../input/uploads/<?php echo $row['images'] ?>" width="100" height="100"></th>
-                                                <th><?php echo $row['alamat_website'] ?></th>
+                                                <th><?php echo $row['no'] ?></th>
+                                                <th><?php echo $row['nama_merk'] ?></th>
+                                                <th><?php echo $row['warna'] ?></th>
+                                                <th><?php echo $row['jumlah'] ?></th>
                                                 <th>
-                                                    <a href="../editdata/editdataperti.php?id=<?php echo $row['id'] ?>" class="btn btn-small"><i class="fa fa-edit"></i>Edit</a>
-                                                    <a onclick="deleteConfirm" href="../hapusdata/hapusperti.php?id=<?php echo $row['id'] ?>" class="btn btn-small text-danger"><i class="fa fa-trash-o">Hapus</i></a>
+                                                    <a href="../editdata/editdatamerk.php?no=<?php echo $row['no'] ?>" class="btn btn-small"><i class="fa fa-edit"></i> Edit</a>
+                                                    <a onclick="deleteConfirm" href="../hapusdata/hapusmerk.php?no=<?php echo $row['no'] ?>" class="btn btn-small text-danger"><i class="fa fa-trash-o"> Hapus</i></a>
                                                 </th>
                                             <?php } ?>
                                     </tbody>
