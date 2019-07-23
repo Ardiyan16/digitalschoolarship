@@ -199,8 +199,8 @@ if (!isset($_SESSION["email"])) {
                                                 <th><img src="../input/uploads/<?php echo $row['images'] ?>" width="100" height="100"></th>
                                                 <th><?php echo $row['alamat_website'] ?></th>
                                                 <th>
-                                                    <a href="../editdata/editdataperti.php?id=<?php echo $row['id'] ?>" class="btn btn-small"><i class="fa fa-edit"></i>Edit</a>
-                                                    <a onclick="deleteConfirm" href="../hapusdata/hapusperti.php?id=<?php echo $row['id'] ?>" class="btn btn-small text-danger"><i class="fa fa-trash-o">Hapus</i></a>
+                                                    <a href="../editdata/editdataperti.php?id=<?php echo $row['id'] ?>" class="btn btn-small"><i class="fa fa-edit"></i> Edit</a>
+                                                    <a onclick="deleteConfirm" href="../hapusdata/hapusperti.php?id=<?php echo $row['id'] ?>" class="btn btn-small text-danger"><i class="fa fa-trash-o"> Hapus</i></a>
                                                 </th>
                                             <?php } ?>
                                     </tbody>
